@@ -4,7 +4,7 @@ import { ConsumerModule } from './consumer.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(ConsumerModule);
-  const port = process.env.CONSUMER_PORT ?? 5001;
+  const port = process.env.CONSUMER_PORT ?? 4001;
   await app.listen(port);
   Logger.log(`Consumer listening on http://localhost:${port}`, 'Bootstrap');
 }
