@@ -29,6 +29,7 @@
     "test:e2e:consumer": "jest --config ./apps/consumer/test/jest-e2e.json"
   },
   "dependencies": {
+    "@aws-sdk/client-sqs": "^3.1127.0",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
